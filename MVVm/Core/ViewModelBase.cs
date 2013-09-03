@@ -22,8 +22,6 @@ namespace MVVm.Core
 
         #endregion // Constructor
 
-        
-
         #region DisplayName
 
         /// <summary>

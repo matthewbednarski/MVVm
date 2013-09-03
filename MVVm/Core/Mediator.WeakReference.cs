@@ -435,7 +435,7 @@ namespace MVVm.Core
 			Func<T, bool> smaFunc = NotifyColleagues;
 			smaFunc.BeginInvoke(message, ia =>
 			                    {
-			                    	try { 
+			                    	try {
 			                    		bool r = smaFunc.EndInvoke(ia);
 			                    		callback.DynamicInvoke(r);
 			                    	}
