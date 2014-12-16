@@ -13,7 +13,6 @@ namespace MVVm.Core
 	public class RelayCommandNoView : ICommandNoView
 	{
 		#region Fields
-
 		readonly Action<object> _execute;
 		readonly Predicate<object> _canExecute;
 		event EventHandler _canExecuteChanged;
