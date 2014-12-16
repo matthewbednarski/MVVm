@@ -19,7 +19,11 @@ namespace MVVm.Core
 		{
 			get
 			{
+				#if __MonoCS__
+				return MVVm.Core.CollectionViewSource.GetDefaultView(this);
+				#else
 				return System.Windows.Data.CollectionViewSource.GetDefaultView(this);
+				#endif
 			}
 		}
 
